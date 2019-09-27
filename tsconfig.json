@@ -3,7 +3,7 @@
     "outDir": "build",
     "module": "commonjs",
     "target": "es5",
-    "lib": ["es5"],
+    "lib": ["es5", "dom"],
     "sourceMap": true,
     "inlineSourceMap": false,
     "inlineSources": false,

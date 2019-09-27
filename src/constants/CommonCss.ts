@@ -4,7 +4,7 @@ import {Breakpoints} from "./Breakpoints";
 import {Color} from "./Color";
 import {FontSize} from "./FontSize";
 import {FontWeight} from "./FontWeight";
-import {MAX_WIDTH} from "./Maxwidth";
+import {MAX_WIDTH} from "./MaxWidth";
 import {ZIndex} from "./ZIndex";
 
 export const CommonCss = stylesheet({
