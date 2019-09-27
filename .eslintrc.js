@@ -11,7 +11,7 @@ const tslintRules = {
     "check-space"
   ],
   "create-async-actions": true,
-  "export-name": false,
+  "export-name": true,
   "function-constructor": true,
   "function-name": [
     true,
@@ -27,26 +27,6 @@ const tslintRules = {
   "increment-decrement": true,
   "jquery-deferred-must-complete": true,
   "jsdoc-format": true,
-  "jsx-boolean-value": true,
-  "jsx-curly-spacing": [
-    true,
-    "never"
-  ],
-  "jsx-equals-spacing": [
-    true,
-    "never"
-  ],
-  "jsx-key": true,
-  "jsx-no-bind": true,
-  "jsx-no-lambda": true,
-  "jsx-no-multiline-js": true,
-  "jsx-no-string-ref": true,
-  "jsx-self-close": true,
-  "jsx-space-before-closing-tag": [
-    true,
-    "never"
-  ],
-  "jsx-wrap-multiline": true,
   "max-func-body-length": [
     true,
     150,
@@ -177,28 +157,6 @@ module.exports = {
     "browser": true,
     "node": true
   },
-  "overrides": [
-    {
-      "files": ["*.stories.tsx"],
-      "rules": {
-        "@typescript-eslint/tslint/config": [
-          "error",
-          {
-            "rulesDirectory": [
-              "node_modules/tslint-react/rules",
-              "node_modules/tslint-microsoft-contrib",
-              "node_modules/@crazyfactory/tslint-rules/lib"
-            ],
-            "rules": {
-              ...tslintRules,
-              "jsx-no-lambda": false,
-              "react-this-binding-issue": false,
-            }
-          }
-        ]
-      }
-    }
-  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "tsconfig.json",
@@ -331,7 +289,6 @@ module.exports = {
       "error",
       {
         "rulesDirectory": [
-          "node_modules/tslint-react/rules",
           "node_modules/tslint-microsoft-contrib",
           "node_modules/@crazyfactory/tslint-rules/lib"
         ],
