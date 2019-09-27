@@ -1,5 +1,6 @@
 {
   "name": "@crazyfactory/frontend-commons",
+  "private": false,
   "description": "common frontend stuff",
   "main": "index.ts",
   "scripts": {
