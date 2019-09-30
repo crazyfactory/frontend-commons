@@ -2,7 +2,8 @@
   "name": "@crazyfactory/frontend-commons",
   "private": false,
   "description": "common frontend stuff",
-  "main": "index.ts",
+  "main": "build/index.js",
+  "typings": "build/index",
   "scripts": {
     "clean": "rimraf build && rimraf .jest/cache",
     "prebuild": "npm run clean -s",
@@ -10,7 +11,8 @@
     "postbuild": "npm run copy-dts",
     "lint": "eslint \"src/**/**.ts*\"",
     "test": "jest",
-    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" build"
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" build",
+    "prepublish": "npm run clean && npm run build"
   },
   "author": "dev@crazy-factory.com",
   "license": "ISC",
@@ -64,6 +66,5 @@
     "setupFilesAfterEnv": [
       "./jest/bootstrap.ts"
     ]
-  },
-  "types": "./src/types.d.ts"
+  }
 }
