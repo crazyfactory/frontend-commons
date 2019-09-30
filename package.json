@@ -64,5 +64,6 @@
     "setupFilesAfterEnv": [
       "./jest/bootstrap.ts"
     ]
-  }
+  },
+  "types": "./types.d.ts"
 }
