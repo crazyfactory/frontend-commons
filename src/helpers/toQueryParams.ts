@@ -1,4 +1,4 @@
-import {snakenKeys} from "./toSnakeCase";
+import {snakenKeys} from "./snaken";
 
 export function toQueryParams(obj: object): {[key: string]: string} {
   if (obj == null) {
