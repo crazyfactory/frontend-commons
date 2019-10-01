@@ -2,8 +2,8 @@
   "name": "@crazyfactory/frontend-commons",
   "private": false,
   "description": "common frontend stuff",
-  "main": "build/index.js",
-  "typings": "build/index",
+  "main": "lib/index.js",
+  "typings": "lib/index",
   "scripts": {
     "clean": "rimraf build && rimraf .jest/cache",
     "prebuild": "npm run clean -s",
