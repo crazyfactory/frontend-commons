@@ -5,13 +5,13 @@
   "main": "lib/index.js",
   "typings": "lib/index",
   "scripts": {
-    "clean": "rimraf build && rimraf .jest/cache",
+    "clean": "rimraf lib && rimraf .jest/cache",
     "prebuild": "npm run clean -s",
     "build": "tsc",
     "postbuild": "npm run copy-dts",
     "lint": "eslint \"src/**/**.ts*\"",
     "test": "jest",
-    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" build",
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" lib",
     "prepublish": "npm run clean && npm run build"
   },
   "author": "dev@crazy-factory.com",

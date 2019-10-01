@@ -1,3 +1,5 @@
+/// <reference path="global.d.ts" />
+
 export {Breakpoints} from "./constants/Breakpoints";
 export {Color} from "./constants/Color";
 export {CommonCss} from "./constants/CommonCss";
@@ -17,11 +19,3 @@ export {toQueryParams} from "./helpers/toQueryParams";
 export {toSnakeCase} from "./helpers/toSnakeCase";
 export {uuid} from "./helpers/uuid";
 export {ApiError} from "./models/ApiError";
-
-/* eslint-disable @typescript-eslint/interface-name-prefix */
-declare global {
-  interface String {
-    toCamelCase(): string;
-    toSnakeCase(): string;
-  }
-}

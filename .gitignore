@@ -1,5 +1,5 @@
 # Build Folder
-build
+lib
 config/main.local.js
 # Logs
 logs
