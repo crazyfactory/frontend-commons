@@ -1,5 +1,3 @@
-// tslint:disable:no-invalid-this
-
 export function snakenKeys(obj: object): {[key: string]: any} {
   if (obj == null) {
     return null;
