@@ -1,16 +1,16 @@
 // tslint:disable:no-invalid-this
 
-export function toSnakeCase(obj: object): {[key: string]: any} {
+export function snakenKeys(obj: object): {[key: string]: any} {
   if (obj == null) {
     return null;
   }
   obj = JSON.parse(JSON.stringify(obj));
   Object.keys(obj).forEach((key) => {
     if (typeof obj[key] === "object") {
-      obj[key] = toSnakeCase(obj[key]);
+      obj[key] = snakenKeys(obj[key]);
     }
 
-    const newKey = key.toSnakeCase();
+    const newKey = snakenStr(key);
     if (newKey !== key) {
       obj[newKey] = obj[key];
       delete obj[key];
@@ -20,6 +20,6 @@ export function toSnakeCase(obj: object): {[key: string]: any} {
   return obj;
 }
 
-String.prototype.toSnakeCase = function(): string {
-  return this.split(/(?=[A-Z])/).join("_").toLowerCase();
-};
+export function snakenStr(str: string): string {
+  return str.split(/(?=[A-Z])/).join("_").toLowerCase();
+}

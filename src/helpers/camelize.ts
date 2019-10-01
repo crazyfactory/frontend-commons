@@ -1,16 +1,14 @@
-// tslint:disable:no-invalid-this
-
-export function toCamelCase(obj: object): object {
+export function camelizeKeys(obj: object): object {
   if (obj == null) {
     return null;
   }
   obj = JSON.parse(JSON.stringify(obj));
   Object.keys(obj).forEach((key) => {
     if (typeof obj[key] === "object") {
-      obj[key] = toCamelCase(obj[key]);
+      obj[key] = camelizeKeys(obj[key]);
     }
 
-    const newKey = key.toCamelCase();
+    const newKey = camelizeStr(key);
     if (newKey !== key) {
       obj[newKey] = obj[key];
       delete obj[key];
@@ -20,8 +18,8 @@ export function toCamelCase(obj: object): object {
   return obj;
 }
 
-String.prototype.toCamelCase = function(): string {
-  return this.replace(/(?:^\w|[A-Z]|\b\w|\s+|-)/g, (match, index) => {
+export function camelizeStr(str: string): string {
+  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+|-)/g, (match, index) => {
     if (/(\s+|_|-)/.test(match)) {
       return "";
     }
@@ -29,4 +27,4 @@ String.prototype.toCamelCase = function(): string {
   }).replace(/_+\w/g, (match) => {
     return match[match.length - 1].toUpperCase();
   });
-};
+}

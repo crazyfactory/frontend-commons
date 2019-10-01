@@ -1,4 +1,4 @@
-import {toSnakeCase} from "./toSnakeCase";
+import {snakenKeys} from "./snaken";
 
 describe("toSnakeCase", () => {
   it("convert object keys to snake case", () => {
@@ -21,7 +21,7 @@ describe("toSnakeCase", () => {
         somethingWEIRD: "ZZZ"
       }
     };
-    expect(toSnakeCase(obj)).toEqual({
+    expect(snakenKeys(obj)).toEqual({
       awesome_place: "Thailand",
       beautiful_girl: "Amber",
       first: {

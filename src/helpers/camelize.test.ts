@@ -1,4 +1,4 @@
-import {toCamelCase} from "./toCamelCase";
+import {camelizeKeys} from "./camelize";
 
 describe("toCamelCase", () => {
   it("convert object keys to camel case", () => {
@@ -21,7 +21,7 @@ describe("toCamelCase", () => {
         something_w_e_i_r_d: "ZZZ"
       }
     };
-    expect(toCamelCase(obj)).toEqual({
+    expect(camelizeKeys(obj)).toEqual({
       awesomePlace: "Thailand",
       beautifulGirl: "Amber",
       first: {
