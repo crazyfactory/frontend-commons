@@ -14,6 +14,7 @@ export {isSubset} from "./helpers/isSubset";
 export {processResponse} from "./helpers/processResponse";
 export {processSagaError} from "./helpers/processSagaError";
 export {snakenKeys, snakenStr} from "./helpers/snaken";
+export {setupCss} from "./helpers/setupCss";
 export {toQueryParams} from "./helpers/toQueryParams";
 export {uuid} from "./helpers/uuid";
 export {ApiError} from "./models/ApiError";
