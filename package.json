@@ -1,7 +1,7 @@
 {
   "name": "@crazyfactory/frontend-commons",
   "private": false,
-  "description": "common frontend stuff",
+  "description": "Common frontend stuff",
   "main": "lib/index.js",
   "typings": "lib/index",
   "scripts": {
@@ -13,7 +13,7 @@
     "prepublish": "npm run clean && npm run build"
   },
   "author": "dev@crazy-factory.com",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
