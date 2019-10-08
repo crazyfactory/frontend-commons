@@ -2,12 +2,14 @@ import {cssRaw} from "typestyle";
 import {Color, FontWeight} from "..";
 import {FontSize} from "../constants/FontSize";
 
-export function setupCss(fontFamily: string = "Roboto"): void {
-  const style: HTMLLinkElement = document.createElement("link");
-  style.rel = "stylesheet";
-  style.type = "text/css";
-  style.href = `https://fonts.googleapis.com/css?family=${fontFamily}:300,400,400i,700&display=swap`;
-  document.getElementsByTagName("head")[0].appendChild(style);
+export function setupCss(ssr: boolean = true, fontFamily: string = "Roboto"): void {
+  if (!ssr) {
+    const style: HTMLLinkElement = document.createElement("link");
+    style.rel = "stylesheet";
+    style.type = "text/css";
+    style.href = `https://fonts.googleapis.com/css?family=${fontFamily}:300,400,400i,700&display=swap`;
+    document.getElementsByTagName("head")[0].appendChild(style);
+  }
 
   cssRaw(`
   * {
