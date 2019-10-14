@@ -41,4 +41,8 @@ describe("toSnakeCase", () => {
       }
     });
   });
+
+  it("does nothing to null", () => {
+    expect(snakenKeys(null)).toBeNull();
+  });
 });
