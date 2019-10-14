@@ -3,8 +3,8 @@ import {pascalizeKeys, pascalizeStr} from "./pascalize";
 describe("pascalize objects", () => {
   it("convert object keys to pascal case", () => {
     const obj = {
-      _under_score: "First",
       AlreadyPascal: "Hehe",
+      _under_score: "First",
       awesome_place: "Thailand",
       beautiful_girl: "Amber",
       first: {
@@ -42,7 +42,7 @@ describe("pascalize objects", () => {
       ThreeDModule: {
         SomethingWEIRD: "ZZZ"
       },
-      UnderScore: "First",
+      UnderScore: "First"
     });
   });
 
