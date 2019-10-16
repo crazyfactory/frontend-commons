@@ -242,7 +242,13 @@ export const CommonCss = stylesheet({
     marginLeft: "1em"
   },
   moveRight3: {
+    marginLeft: "1.5em"
+  },
+  moveRight4: {
     marginLeft: "2em"
+  },
+  moveRight5: {
+    marginLeft: "3em"
   },
   overflowHidden: {
     overflow: "hidden"
