@@ -268,7 +268,13 @@ export const CommonCss = stylesheet({
     marginTop: "1em"
   },
   pullDown3: {
+    marginTop: "1.5em"
+  },
+  pullDown4: {
     marginTop: "2em"
+  },
+  pullDown5: {
+    marginTop: "3em"
   },
   resetMargin: {
     margin: 0
