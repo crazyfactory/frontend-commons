@@ -9,7 +9,7 @@ export {AddEventListener} from "./helpers/AddEventListener";
 export {buildBreakpoints} from "./helpers/buildBreakpoints";
 export {camelizeKeys, camelizeStr} from "./helpers/camelize";
 export {delayPromise} from "./helpers/delayPromise";
-export {getNowISO} from "./helpers/getNowISO";
+export {getDatetimeIso} from "./helpers/getDatetimeIso";
 export {hash} from "./helpers/hash";
 export {isSubset} from "./helpers/isSubset";
 export {processResponse} from "./helpers/processResponse";
