@@ -117,6 +117,9 @@ export const CommonCss = stylesheet({
   fontSmall: {
     fontSize: FontSize.SMALL
   },
+  fontStyleItalic: {
+    fontStyle: "italic"
+  },
   fontWeightBold: {
     fontWeight: FontWeight.BOLD
   },
