@@ -17,6 +17,36 @@ export const CommonCss = stylesheet({
     alignItems: "center",
     display: "flex"
   },
+  bgColorBlack: {
+    color: Color.BLACK
+  },
+  bgColorBlue: {
+    color: Color.BLUE
+  },
+  bgColorCoral: {
+    color: Color.CORAL
+  },
+  bgColorDarkGrey: {
+    color: Color.DARK_GREY
+  },
+  bgColorGreen: {
+    color: Color.GREEN
+  },
+  bgColorGrey: {
+    color: Color.GREY
+  },
+  bgColorLightBlue: {
+    color: Color.LIGHT_BLUE
+  },
+  bgColorRed: {
+    color: Color.RED
+  },
+  bgColorVeryLightGrey: {
+    color: Color.VERY_LIGHT_GREY
+  },
+  bgColorWhite: {
+    color: Color.WHITE
+  },
   block: {
     display: "block"
   },
