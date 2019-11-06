@@ -268,6 +268,21 @@ export const CommonCss = stylesheet({
   lowercase: {
     textTransform: "lowercase"
   },
+  moveLeft1: {
+    marginRight: "0.5em"
+  },
+  moveLeft2: {
+    marginRight: "1em"
+  },
+  moveLeft3: {
+    marginRight: "1.5em"
+  },
+  moveLeft4: {
+    marginRight: "2em"
+  },
+  moveLeft5: {
+    marginRight: "3em"
+  },
   moveRight1: {
     marginLeft: "0.5em"
   },
