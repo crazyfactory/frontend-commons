@@ -14,8 +14,7 @@ export const CommonCss = stylesheet({
     padding: 0
   },
   alignItemsCenter: {
-    alignItems: "center",
-    display: "flex"
+    alignItems: "center"
   },
   bgColorBlack: {
     color: Color.BLACK
@@ -126,7 +125,6 @@ export const CommonCss = stylesheet({
     flexDirection: "column"
   },
   flexWrap: {
-    display: "flex",
     flexWrap: "wrap"
   },
   fontExtraHugh: {
@@ -374,7 +372,6 @@ export const CommonCss = stylesheet({
     ])
   },
   spaceBetween: {
-    display: "flex",
     justifyContent: "space-between"
   },
   textAlignCenter: {
