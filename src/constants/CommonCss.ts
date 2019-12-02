@@ -17,34 +17,34 @@ export const CommonCss = stylesheet({
     alignItems: "center"
   },
   bgColorBlack: {
-    color: Color.BLACK
+    backgroundColor: Color.BLACK
   },
   bgColorBlue: {
-    color: Color.BLUE
+    backgroundColor: Color.BLUE
   },
   bgColorCoral: {
-    color: Color.CORAL
+    backgroundColor: Color.CORAL
   },
   bgColorDarkGrey: {
-    color: Color.DARK_GREY
+    backgroundColor: Color.DARK_GREY
   },
   bgColorGreen: {
-    color: Color.GREEN
+    backgroundColor: Color.GREEN
   },
   bgColorGrey: {
-    color: Color.GREY
+    backgroundColor: Color.GREY
   },
   bgColorLightBlue: {
-    color: Color.LIGHT_BLUE
+    backgroundColor: Color.LIGHT_BLUE
   },
   bgColorRed: {
-    color: Color.RED
+    backgroundColor: Color.RED
   },
   bgColorVeryLightGrey: {
-    color: Color.VERY_LIGHT_GREY
+    backgroundColor: Color.VERY_LIGHT_GREY
   },
   bgColorWhite: {
-    color: Color.WHITE
+    backgroundColor: Color.WHITE
   },
   block: {
     display: "block"
