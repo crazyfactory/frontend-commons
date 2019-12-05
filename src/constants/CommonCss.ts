@@ -299,6 +299,9 @@ export const CommonCss = stylesheet({
   overflowHidden: {
     overflow: "hidden"
   },
+  padding: {
+    padding: "15px"
+  },
   pageContainer: {
     marginLeft: "auto",
     marginRight: "auto",
