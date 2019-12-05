@@ -360,6 +360,10 @@ export const CommonCss = stylesheet({
   selfVerticallyCentered: {
     alignSelf: "center"
   },
+  sidePadding: {
+    paddingLeft: "15px",
+    paddingRight: "15px"
+  },
   sidePaddingTillLG: {
     paddingLeft: "15px",
     paddingRight: "15px",
