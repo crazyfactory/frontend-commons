@@ -394,6 +394,9 @@ export const CommonCss = stylesheet({
   textAlignRight: {
     textAlign: "right"
   },
+  transitionOpacity: {
+    transition: "opacity 0.2s" 
+  },
   transparent: {
     opacity: 0,
     visibility: "hidden"
