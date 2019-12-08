@@ -297,7 +297,8 @@ export const CommonCss = stylesheet({
     marginLeft: "3em"
   },
   opaque: {
-    opacity: 1
+    opacity: 1,
+    visibility: "visible"
   },
   overflowHidden: {
     overflow: "hidden"
@@ -394,7 +395,8 @@ export const CommonCss = stylesheet({
     textAlign: "right"
   },
   transparent: {
-    opacity: 0
+    opacity: 0,
+    visibility: "hidden"
   },
   unchangedLink: {
     $nest: {
