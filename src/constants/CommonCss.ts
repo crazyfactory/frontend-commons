@@ -118,6 +118,21 @@ export const CommonCss = stylesheet({
   colorWhite: {
     color: Color.WHITE
   },
+  fit2: {
+    minWidth: "50%"
+  },
+  fit3: {
+    minWidth: "33%"
+  },
+  fit4: {
+    minWidth: "25%"
+  },
+  fit5: {
+    minWidth: "20%"
+  },
+  fit6: {
+    minWidth: "16%"
+  },
   flex: {
     display: "flex"
   },
