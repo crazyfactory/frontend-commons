@@ -124,6 +124,15 @@ export const CommonCss = stylesheet({
   flexColumn: {
     flexDirection: "column"
   },
+  flexDirectionResponsive: {
+    flexDirection: "column",
+    ...buildBreakpoints([
+      {
+        flexDirection: "row",
+        minScreenWidth: Breakpoints.MD
+      }
+    ])
+  },
   flexWrap: {
     flexWrap: "wrap"
   },
