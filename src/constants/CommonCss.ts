@@ -187,6 +187,9 @@ export const CommonCss = stylesheet({
   fullWidth: {
     width: "100%"
   },
+  fullViewportHeight: {
+    minHeight: "100vh"
+  },
   grow: {
     flexGrow: 1
   },
