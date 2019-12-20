@@ -24,5 +24,5 @@ describe("deepAssign", () => {
     expect(deepAssign({a: 1}, 1)).toEqual({a: 1});
     expect(deepAssign(1, {a: 1})).toEqual(1);
     expect(deepAssign(1, 2)).toEqual(1);
-  })
+  });
 });
