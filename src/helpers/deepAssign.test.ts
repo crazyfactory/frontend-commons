@@ -20,7 +20,7 @@ describe("deepAssign", () => {
     expect(deepAssign({a: null}, {a: "a"})).toEqual({a: "a"});
   });
 
-  it("defaults to target is param is not object", () => {
+  it("defaults to target if param is not object", () => {
     expect(deepAssign({a: 1}, 1)).toEqual({a: 1});
     expect(deepAssign(1, {a: 1})).toEqual(1);
     expect(deepAssign(1, 2)).toEqual(1);
