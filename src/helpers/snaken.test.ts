@@ -56,4 +56,27 @@ describe("toSnakeCase", () => {
       "should_be_processed": 2
     });
   });
+
+  it("does not process exception keys recursively", () => {
+    const obj = {
+      a: {
+        b: {
+          c: {
+            "Should Be The Same": {childIsAlsoTheSame: 1},
+            "shouldBeProcessed": 2
+          }
+        }
+      }
+    };
+    expect(snakenKeys(obj, ["Should Be The Same"])).toEqual({
+      a: {
+        b: {
+          c: {
+            "Should Be The Same": {childIsAlsoTheSame: 1},
+            "should_be_processed": 2
+          }
+        }
+      }
+    });
+  });
 });

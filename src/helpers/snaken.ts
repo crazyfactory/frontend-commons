@@ -5,7 +5,7 @@ export function snakenKeys(obj: object, exceptions: string[] = []): {[key: strin
   obj = JSON.parse(JSON.stringify(obj));
   Object.keys(obj).filter((k) => !exceptions.includes(k)).forEach((key) => {
     if (typeof obj[key] === "object") {
-      obj[key] = snakenKeys(obj[key]);
+      obj[key] = snakenKeys(obj[key], exceptions);
     }
 
     const newKey = snakenStr(key);

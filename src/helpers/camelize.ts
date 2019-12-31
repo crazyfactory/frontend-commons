@@ -5,7 +5,7 @@ export function camelizeKeys(obj: object, exceptions: string[] = []): object {
   obj = JSON.parse(JSON.stringify(obj));
   Object.keys(obj).filter((k) => !exceptions.includes(k)).forEach((key) => {
     if (typeof obj[key] === "object") {
-      obj[key] = camelizeKeys(obj[key]);
+      obj[key] = camelizeKeys(obj[key], exceptions);
     }
 
     const newKey = camelizeStr(key);
