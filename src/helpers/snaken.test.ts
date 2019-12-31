@@ -45,4 +45,15 @@ describe("toSnakeCase", () => {
   it("does nothing to null", () => {
     expect(snakenKeys(null)).toBeNull();
   });
+
+  it("does not process exception keys", () => {
+    const obj = {
+      "Should Be The Same": {childIsAlsoTheSame: 1},
+      "shouldBeProcessed": 2
+    };
+    expect(snakenKeys(obj, ["Should Be The Same"])).toEqual({
+      "Should Be The Same": {childIsAlsoTheSame: 1},
+      "should_be_processed": 2
+    });
+  });
 });

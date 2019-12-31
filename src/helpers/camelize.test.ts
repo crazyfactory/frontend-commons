@@ -69,4 +69,15 @@ describe("camelize strings", () => {
   it("does nothing to camelized word", () => {
     expect(camelizeStr("categoriesListApi")).toEqual("categoriesListApi");
   });
+
+  it("does not process exception keys", () => {
+    const obj = {
+      "Should Be The Same": {child_is_also_the_same: 1},
+      "should_be_processed": 2
+    };
+    expect(camelizeKeys(obj, ["Should Be The Same"])).toEqual({
+      "Should Be The Same": {child_is_also_the_same: 1},
+      "shouldBeProcessed": 2
+    });
+  });
 });

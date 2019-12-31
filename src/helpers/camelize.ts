@@ -1,9 +1,9 @@
-export function camelizeKeys(obj: object): object {
+export function camelizeKeys(obj: object, exceptions: string[] = []): object {
   if (obj == null) {
     return null;
   }
   obj = JSON.parse(JSON.stringify(obj));
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).filter((k) => !exceptions.includes(k)).forEach((key) => {
     if (typeof obj[key] === "object") {
       obj[key] = camelizeKeys(obj[key]);
     }

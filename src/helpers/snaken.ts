@@ -1,9 +1,9 @@
-export function snakenKeys(obj: object): {[key: string]: any} {
+export function snakenKeys(obj: object, exceptions: string[] = []): {[key: string]: any} {
   if (obj == null) {
     return null;
   }
   obj = JSON.parse(JSON.stringify(obj));
-  Object.keys(obj).forEach((key) => {
+  Object.keys(obj).filter((k) => !exceptions.includes(k)).forEach((key) => {
     if (typeof obj[key] === "object") {
       obj[key] = snakenKeys(obj[key]);
     }
