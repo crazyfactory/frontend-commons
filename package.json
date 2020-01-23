@@ -63,5 +63,8 @@
     "setupFilesAfterEnv": [
       "./jest/bootstrap.ts"
     ]
+  },
+  "dependencies": {
+    "base-64": "^0.1.0"
   }
 }
