@@ -412,6 +412,9 @@ export const CommonCss = stylesheet({
   spaceBetween: {
     justifyContent: "space-between"
   },
+  spaceEvenly: {
+    justifyContent: "space-evenly"
+  },
   textAlignCenter: {
     textAlign: "center"
   },
